@@ -1,0 +1,15 @@
+#include <iostream>
+#define _USE_MATH_DEFINES
+#include <math.h>
+
+
+using namespace std;
+
+int main()
+{   
+    setlocale(LC_ALL, "RUS");
+    double r;
+    cout << "Введите радиус: ";
+    cin >> r;
+    cout << "Площадь круга: " << M_PI * pow(r, 2) << endl << "Длина окружности: " << 2 * M_PI * r;
+}
