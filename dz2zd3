@@ -8,9 +8,12 @@ int main() {
 	double x, y, r;
 	cin >> x >> y;
 	r = sqrt(pow(x, 2) + pow(y, 2));
-	if (((abs(x) <= 1) && (abs(y) <= 3)) && r >= 2) {
+	if (((abs(x) < 1) && (abs(y) < 3)) && r > 2) {
 		cout << "ДА";
 	}
+	else if (((((abs(x) == 1) && (abs(y) <= 3)) || ((abs(y) == 3) && (abs(x) <= 1))) && r >= 2) || ((r == 2) && (abs(y) <= 3 || abs(x) <= 1))) {
+		cout << "ГРАНИЦА";
+		}
 	else {
 		cout << "НЕТ";
 	}
