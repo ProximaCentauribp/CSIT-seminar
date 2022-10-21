@@ -1,0 +1,20 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+#include <algorithm>
+
+using namespace std;
+
+double storona(double x) {
+	return sqrt(x / (sqrt(3) / 4));
+}
+
+double gipotenyza(double x) {
+	return sqrt(pow(x, 2) * 2);
+}
+
+int main() {
+	double s;
+	cin >> s;
+	cout << storona(s) * 2 + gipotenyza(storona(s));
+}
