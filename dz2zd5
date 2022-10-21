@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+	setlocale(LC_ALL, "RUS");
+	int x, k = 1;
+	cout << "";
+	cin >> x;
+	while (x >= 0) 
+		{
+		cin >> x;
+		k++;
+		}
+	cout << k;
+	return 0;
+}
