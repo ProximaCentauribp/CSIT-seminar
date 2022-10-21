@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+	setlocale(LC_ALL, "RUS");
+	double x;
+	cout << "Введите значение x: ";
+	cin >> x;
+	double b, c;
+	double a = pow(cosh(x), -7) + (log(2 * x) / log(7 / 8.));
+	b = modf(a, &c);
+	cout << "Целая часть: " << c << endl << "Дробная часть" << b;
+
+}
