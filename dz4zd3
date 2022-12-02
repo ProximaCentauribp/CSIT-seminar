@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n = 1;
+	double x, e, sum = 0;
+	cout << "x = ";
+	cin >> x;
+	cout << "e = ";
+	cin >> e;
+	double c = x * x;
+	double z = 2;
+	double a = n * (n - 1) * (c / z);
+	if (n == 1) {
+		c *= x * x;
+		z *= (2 * n + 1) * (2 * n + 2);
+		n++;
+		a = n * (n - 1) * (c / z);
+	}
+	while (abs(a) >= e) {
+		sum += a;
+		c *= x * x;
+		z *= (2 * n + 1) * (2 * n + 2);
+		n++;
+		a = n * (n - 1) * (c / z);
+	}
+	cout << sum;
+	return 0;
+}
