@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+
+void f(int& a) {
+	if (a != 0)
+		cout << -a;
+	else
+		cout << "Вы ввели неверное значение";
+}
+
+int main() {
+	int x;
+	cin >> x;
+	f(x);
+}
