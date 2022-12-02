@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+	unsigned long long sum = 0;
+	int n, x, f = 1;
+	cin >> n >> x;
+	cout << "n\tsum\n";
+	for (int i = 1; i <= n; i++) {
+		f *= i;
+		sum += f * pow(x, 2 * i + 1);
+		cout << i << "\t" << sum << endl;
+	}
+}
